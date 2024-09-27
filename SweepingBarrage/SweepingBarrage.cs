@@ -14,11 +14,10 @@ using System.Reflection;
 
 namespace SweepBarrage
 {
-    [BepInDependency("com.bepis.r2api")]
-    [R2API.Utils.R2APISubmoduleDependency(nameof(ContentAddition))]
+    [BepInDependency(R2API.R2API.PluginGUID)]
+    [BepInDependency(R2API.LanguageAPI.PluginGUID)]
+    [BepInDependency(R2API.ContentManagement.R2APIContentManager.PluginGUID)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
-    [R2API.Utils.R2APISubmoduleDependency(nameof(ContentAddition), nameof(LanguageAPI))]
-
     [BepInPlugin("com.Forced_Reassembly.SweepingBarrage", "Sweeping Barrage", "1.0.0")]
     public class SweepBarragePlugin : BaseUnityPlugin
     {
