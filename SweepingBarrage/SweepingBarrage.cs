@@ -55,7 +55,7 @@ namespace SweepBarrage
             mySkillDef.skillNameToken = "Sweeping Barrage";
             (mySkillDef as ScriptableObject).name = mySkillDef.skillName;
             SweepBarragePlugin.SweepBarrageSkill = mySkillDef;
-            LanguageAPI.Add("COMMANDO_SPECIAL_SWEEPBARRAGE_NAME", "Sweep Barrage");
+            LanguageAPI.Add("COMMANDO_SPECIAL_SWEEPBARRAGE_NAME", "Sweeping Barrage");
 
 
             // This adds our skilldef. If you don't do this, the skill will not work.
